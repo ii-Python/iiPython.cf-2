@@ -11,4 +11,4 @@ _STATIC_DIR = os.path.join(os.environ["_IIPYTHON_ROOT"], "src/static")
 # Routes
 @app.route("/s/<path:path>")
 def _get_static_file(path):
-    return send_from_directory(_STATIC_DIR, path)
+    return send_from_directory(_STATIC_DIR, path, conditional = True)

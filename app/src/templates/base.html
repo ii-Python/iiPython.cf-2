@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en" prefix = "{{ html_prefix if html_prefix else '' }}">
+    <head>
+
+        <!-- Meta -->
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% block meta %}{% endblock %}
+        {% if not hidemeta %}
+
+            <!-- Discord Meta -->
+            <meta name = "theme-color" content = "#4285f4">
+            <meta content = "¯\_(ツ)_/¯" property = "og:title">
+            <meta content = "Not sure what this website is meant to be." property = "og:description">
+            <meta content = "Ben's Site" property = "og:site_name">
+            <meta content = "/s/favicon.png" property = "og:image">
+        {% endif %}
+
+        <!-- CSS -->
+        <link rel = "stylesheet" href = "/s/css/bootstrap.css">
+        <link rel = "stylesheet" href = "/s/css/page.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+        <!-- Misc -->
+        <link rel = "icon" type = "image/png" href = "/s/favicon.png">
+        <title>Ben's Things</title>
+    </head>
+    <body>
+        <nav class = "navbar navbar-expand-lg navbar-light">
+            <div class = "collapse navbar-collapse">
+                <ul class = "navbar-nav mr-auto">
+                    <li class = "nav-item">
+                        <a class = "nav-link text-secondary" href = "/">Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link text-secondary" href = "/about">About</a>
+                    </li>
+                    <li class = "nav-item">
+                        <li class = "dropdown">
+                            <a class = "nav-link text-secondary dropdown-toggle" data-toggle = "dropdown">Images <span class = "caret"></span></a>
+                            <ul class = "dropdown-menu">
+                                <li><a class = "nav-link dropdown-link" href = "/srv/embed_gen">Embed Maker</a></li>
+                                <li><a class = "nav-link dropdown-link" href = "/srv/badge_gen">Badge Generator</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li class = "nav-item">
+                        <li class = "dropdown">
+                            <a class = "nav-link text-secondary dropdown-toggle" data-toggle = "dropdown">Extras <span class = "caret"></span></a>
+                            <ul class = "dropdown-menu">
+                                <li><a class = "nav-link dropdown-link" href = "/api">API</a></li>
+                                <li><a class = "nav-link dropdown-link" href = "/paint">Painting</a></li>
+                                <li><a class = "nav-link dropdown-link" href = "/srv/shortener">URL Shortener</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div align = "center" class = "ii-content">
+            {% block content %}{% endblock %}
+        </div>
+        <br>
+        <div class = "ii-sep"></div>
+        <footer>
+            <a href = "https://github.com/ii-Python/Website-v2">
+                <i class = "fab fa-github"></i>
+            </a>
+            <a data-toggle = "tooltip" data-placement = "top" title = "iiPython#0768">
+                <i class = "fab fa-discord"></i>
+            </a>
+            <a onclick = "confetti.start(1200, 50, 150);">
+                <i class = "fas fa-smile-wink"></i>
+            </a>
+        </footer>
+
+        <!-- JS -->
+        <script src = "/s/js/confetti.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "/s/js/page.js"></script>
+        <script src = "/s/js/bootstrap.js"></script>
+    </body>
+</html>

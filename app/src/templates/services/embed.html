@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block meta %}
+    {% if title %}<meta content = "{{ title }}" property = "og:title">{% endif %}
+    {% if image %}<meta content = "{{ image }}" property = "og:image" />{% endif %}
+    {% if desc %}<meta content = "{{ desc }}" property = "og:description">{% endif %}
+    {% if color %}<meta name = "theme-color" content = "#{{ lstrip(color, '#') }}">{% endif %}
+    {% if author %}<link type = "application/json+oembed" href = "https://{{ app.config['hostname'] }}/srv/oembed?author={{ author }}" />{% endif %}
+    {% if url %}<meta property = "og:url" content = "{{ url }}" />{% endif %}
+{% endblock %}
+{% set hidemeta = True %}
+{% block content %}
+    <h2>Greetings.</h2>
+    <p>
+        This is a quick and simple method of sending custom discord embeds. <br>
+        Want to make your own? <a href = "/srv/embed_gen">Click here.</a> Don't know what this site is? <a href = "/about">Click here.</a>
+    </p>
+    <div id = "ii-sep"></div>
+    <a href = "/" class = "ii-btn-block">To The Homepage</a>
+{% endblock %}

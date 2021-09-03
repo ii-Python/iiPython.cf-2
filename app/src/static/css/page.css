@@ -1,0 +1,89 @@
+/* Main elements */
+body {
+    background-color: #061E3E;
+}
+footer {
+    left: 0;
+    bottom: 0;
+    color: #FFF;
+    position: fixed;
+    padding-left: 7px;
+    user-select: none;
+    padding-bottom: 2px;
+}
+footer a {
+    float: left;
+    cursor: pointer;
+    padding-right: 7px;
+}
+a { color: var(--cyan); }
+a:hover { color: var(--blue); text-decoration: none; }
+i { color: white; }
+footer a i:hover { color: #999; }
+
+/* Variables */
+:root {
+    --ii-btn-margin: 20px;
+}
+
+/* Classes */
+.ml { padding-right: 5px; }
+.ii-sep { padding-top: 25px; }
+.ii-content { padding-top: 2%; color: #fff; }
+.ii-btn-block {
+
+    /* Basic styling */
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* Properly align */
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    border-radius: .25rem;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+
+    /* Handle colors and transition */
+    color: #fff;
+    border: 1px solid #343a40;
+    background-color: transparent;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    /* Hide ugly selection */
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    /* Margin information */
+    margin-left: var(--ii-btn-margin);
+    margin-right: var(--ii-btn-margin);
+    margin-top: calc(var(--ii-btn-margin) / 2);
+    margin-bottom: calc(var(--ii-btn-margin) / 2);
+}
+.ii-btn-block:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #343a40;
+}
+
+.dropdown-menu {
+    background-color: #6C757D;
+}
+.dropdown-divider {
+    border-top: 1px solid #343A40
+}
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/** Elements that require the !important attribute due to bootstrap **/
+a.dropdown-link {
+    color: #333 !important;
+}
+a.dropdown-link:hover {
+    color: black !important;
+}
