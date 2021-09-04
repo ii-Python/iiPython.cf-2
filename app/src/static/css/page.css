@@ -28,6 +28,7 @@ footer a i:hover { color: #999; }
 
 /* Classes */
 .ml { padding-right: 5px; }
+.alert { width: 60%; }
 .ii-sep { padding-top: 25px; }
 .ii-content { padding-top: 2%; color: #fff; }
 .ii-btn-block {

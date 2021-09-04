@@ -24,11 +24,11 @@ def load_embed_page():
         location = "/srv/embed",
         method = "GET",
         groups = [
-            {"id": "textInput", "type": "text", "name": "Embed Title", "placeholder": "Choose a title (optional)", "qname": "title"},
-            {"id": "descInput", "type": "text", "name": "Embed Description", "placeholder": "Choose a description (optional)", "qname": "desc"},
-            {"id": "authorInput", "type": "text", "name": "Embed Author", "placeholder": "Choose an author (optional)", "qname": "author"},
-            {"id": "colorInput", "type": "text", "name": "Embed Color", "placeholder": "Choose a HEX color code (optional)", "qname": "color"},
-            {"id": "imgInput", "type": "text", "name": "Thumbnail URL", "placeholder": "Choose an image URL for the thumbnail (optional)", "qname": "image"}
+            {"id": "textInput", "type": "text", "name": "Embed Title", "placeholder": "Embed title (optional)", "qname": "title"},
+            {"id": "descInput", "type": "text", "name": "Embed Description", "placeholder": "Embed description (optional)", "qname": "desc"},
+            {"id": "authorInput", "type": "text", "name": "Embed Author", "placeholder": "Author Text (optional)", "qname": "author"},
+            {"id": "colorInput", "type": "text", "name": "Embed Color", "placeholder": "HEX color code (optional)", "qname": "color"},
+            {"id": "imgInput", "type": "text", "name": "Thumbnail URL", "placeholder": "Image URL for the thumbnail (optional)", "qname": "image"}
         ],
         submit_text = "Create Embed"
     ), 200

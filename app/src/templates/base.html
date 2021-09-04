@@ -58,6 +58,20 @@
             </div>
         </nav>
         <div align = "center" class = "ii-content">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+
+                    <!-- Flashes messages -->
+                    {% for message in messages %}
+                        <div class = "alert alert-info alert-dismissible fade show" role = "alert">
+                            {{ message|safe }}
+                            <button type = "button" class = "close" data-dismiss = "alert" aria-label = "Close">
+                                <span aria-hidden = "true">&times;</span>
+                            </button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
             {% block content %}{% endblock %}
         </div>
         <br>
