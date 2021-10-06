@@ -51,6 +51,7 @@
                                 <li><a class = "nav-link dropdown-link" href = "/api">API</a></li>
                                 <li><a class = "nav-link dropdown-link" href = "/paint">Painting</a></li>
                                 <li><a class = "nav-link dropdown-link" href = "/srv/shortener">URL Shortener</a></li>
+                                <li><a class = "nav-link dropdown-link" href = "/privacy">Privacy Policy</a></li>
                             </ul>
                         </li>
                     </li>
@@ -72,7 +73,9 @@
                     {% endfor %}
                 {% endif %}
             {% endwith %}
+            {% if left %}<div style = "text-align: left; width: 700px;">{% endif %}
             {% block content %}{% endblock %}
+            {% if left %}</div>{% endif %}
         </div>
         <br>
         <div class = "ii-sep"></div>

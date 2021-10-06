@@ -80,6 +80,7 @@ footer a i:hover { color: #999; }
 .dropdown-toggle {
     cursor: pointer;
 }
+.center { text-align: center; }
 
 /** Elements that require the !important attribute due to bootstrap **/
 a.dropdown-link {

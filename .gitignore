@@ -3,5 +3,5 @@ __pycache__/
 
 # Hide extras
 .env
-app/src/db/*
+app/db/*
 app/src/root/*

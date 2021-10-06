@@ -29,7 +29,8 @@ def inject_globals():
 
 # Routes
 from .src.routes import (
-    static, public, root, errors
+    static, public, root, errors,
+    legal
 )
 from .src.routes.services import (
     embeds, images, shortener
