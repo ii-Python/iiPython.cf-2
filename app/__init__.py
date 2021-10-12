@@ -15,7 +15,7 @@ app = Flask(
 )
 
 # Configuration
-app.config["hostname"] = "local.iipython.cf"
+app.config["hostname"] = "iipython.cf"
 app.secret_key = os.getenv("SECRET_KEY") or input("Secret key: ")
 
 # Functions/post-init
